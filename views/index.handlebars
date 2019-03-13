@@ -1,0 +1,14 @@
+
+<div class="jumbotron text-center">
+    <h1 class="text-center">Welcome to the Score Page</h1>
+    <p>These are the current scores</p>
+    {{#each entries }}
+        <div class='entries'>
+            <p class="font-weight-bold">Game: {{title}}</p>
+            <p>Id: {{playerID}}</p>
+            <p>Score: {{Score}}</p>
+        </div>
+        <br>
+    {{else}}
+    {{/each}}
+</div>
